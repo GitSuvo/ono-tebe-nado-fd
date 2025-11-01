@@ -1,0 +1,31 @@
+{
+  "name": "ono-tebe-nado-fd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitSuvo/ono-tebe-nado-fd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GitSuvo/ono-tebe-nado-fd/issues"
+  },
+  "homepage": "https://github.com/GitSuvo/ono-tebe-nado-fd#readme",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "prettier": {                  
+    "semi": true,               
+    "trailingComma": "all",     
+    "singleQuote": true,        
+    "printWidth": 80,          
+    "tabWidth": 2
+  }       
+}
