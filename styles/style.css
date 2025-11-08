@@ -40,8 +40,8 @@
   flex-direction: column;
   justify-self: end;
   width: 240px;
-  height: 98px;
-  align-items: start;
+  font-style: normal;
+  align-items: flex-start;
 }
 
 .address_item {
@@ -98,16 +98,18 @@
 
 .aligned-text_left {
   letter-spacing: 30px;
+  text-align: left;
 }
 
 .aligned-text_center {
   letter-spacing: 30px;
-  margin-left: 330px;
+  margin-left: 33%; /* text-align работает не совсем как нужно, не понятно почему (не совпадает с шаблоном - скрин в папке image) загуглил более адаптивный вариант margin с %*/
 }
 
 .aligned-text_right {
   letter-spacing: 30px;
-  margin-left: 615px;
+  padding: 0;
+  margin-left: 61%; /*здесь тоже самое*/
 }
 
 .cover__description {
@@ -187,7 +189,7 @@
   text-decoration: underline;
   position: relative;
   margin: 48px 40px 0;
-  size: 254px 82px;
+  size: 254px;
 }
 
 .card_type_film {
@@ -250,7 +252,6 @@
   margin-top: 254px;
   flex-direction: column;
   gap: 24px;
-  height: 499px;
 }
 
 .about__title {
@@ -268,11 +269,12 @@
   display: grid;
   grid-template-columns: 315px 1fr 1fr;
   gap: 105px;
-  margin-top: 143px;
+  margin-top: 183px; /* увеличил отступ*/
 }
 
 .footer_address {
   width: 266px;
+  font-style: normal;
 }
 
 .footer__menu {
