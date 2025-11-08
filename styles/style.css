@@ -270,6 +270,7 @@
   grid-template-columns: 315px 1fr 1fr;
   gap: 105px;
   margin-top: 183px; /* увеличил отступ*/
+  margin-bottom: 82px;
 }
 
 .footer_address {
