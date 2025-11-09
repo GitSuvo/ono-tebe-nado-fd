@@ -85,15 +85,12 @@
 }
 
 .cover__title {
+  display: flex;
+  flex-direction: column;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 100px;
   position: relative;
-}
-
-.aligned-text {
-  display: block;
-  line-height: 130px;
 }
 
 .aligned-text_left {
@@ -103,19 +100,23 @@
 
 .aligned-text_center {
   letter-spacing: 30px;
-  margin-left: 33%; /* text-align работает не совсем как нужно, не понятно почему (не совпадает с шаблоном - скрин в папке image) загуглил более адаптивный вариант margin с %*/
+  text-align: center;
+  line-height: 1.5;
 }
 
 .aligned-text_right {
   letter-spacing: 30px;
-  padding: 0;
-  margin-left: 61%; /*здесь тоже самое*/
+  text-align: right;
+}
+
+.no-letter-spacing {
+  letter-spacing: normal; /* создал класс для обнуления 'letter-spacing' для последних СТРОЧНЫХ букв*/
 }
 
 .cover__description {
   display: flex;
   gap: 107px;
-  margin-top: 100px;
+  margin-top: 107px;
   align-items: center;
 }
 
@@ -269,8 +270,8 @@
   display: grid;
   grid-template-columns: 315px 1fr 1fr;
   gap: 105px;
-  margin-top: 183px; /* увеличил отступ*/
-  margin-bottom: 82px;
+  margin-top: 183px;
+  padding-bottom: 82px; /*сделал внутренний отступ*/
 }
 
 .footer_address {
